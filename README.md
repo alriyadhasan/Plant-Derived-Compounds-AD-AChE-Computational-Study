@@ -13,28 +13,6 @@ This repository contains data and workflows for identifying plant-derived acetyl
 - Md. Aktaruzzaman (Email: aktaruzzaman.phar@gmail.com)  
 - Md. Obayed Raihan (Email: mraihan@csu.edu)  
 
-## Repository Structure
-
-/data
-ligands/ # 440 screened phytochemicals
-top_compounds/ # Top 3 compounds + control donepezil
-supplementary/ # Tables, PDFs, Excel files
-
-/docking
-SP_docking/ # Standard Precision docking results
-XP_docking/ # Extra Precision docking results
-MMGBSA/ # Post-docking binding free energies
-
-/qm_analysis/ # DFT and Frontier Molecular Orbital analysis
-/md_simulations/
-trajectories/ # MD trajectories
-analysis/ # RMSD, RMSF, Rg, SASA, PCA, FEL, DCCM plots
-
-/code/ # Scripts for analysis and plotting
-/figures/ # Figures from manuscript
-README.md
-LICENSE
-.gitignore
 
 ## Methodology Summary
 
@@ -45,25 +23,6 @@ LICENSE
 5. **ADMET & Toxicity:** SwissADME and ProTox-III used to assess drug-likeness and toxicity.
 6. **MD Simulations:** 100 ns simulations with Desmond; analyzed RMSD, RMSF, Rg, SASA, PCA, FEL, DCCM.
 
-## How to Reproduce
-
-1. Clone the repository:
-```bash
-git clone https://github.com/YourUsername/AD-AChE-Ligand-Docking-Simulation.git
-cd AD-AChE-Ligand-Docking-Simulation
-Use the files as follows:
-
-data/ligands → input for docking
-
-docking/SP_docking and docking/XP_docking → docking outputs
-
-qm_analysis → DFT calculations
-
-md_simulations/trajectories → input for trajectory analysis
-
-md_simulations/analysis → MD plots and metrics
-
-Optional: use code/ scripts to generate additional analysis plots.
 
 License
 
